@@ -112,6 +112,8 @@ namespace PracticeMode
     static void Main(string[] args)
     {
       DemoPracticeNumberOne();
+      Console.WriteLine("\n\n\n");
+      DemoPracticeNumberTwo();
 
       Console.ReadLine();
     }
