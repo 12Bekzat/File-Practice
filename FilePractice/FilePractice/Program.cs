@@ -85,6 +85,30 @@ namespace PracticeMode
       }
     }
 
+
+    static void DemoPracticeNumberTwo()
+    {
+      using (var file = new StreamWriter("Обо мне.txt"))
+      {
+        string lastName, FirstName, Age;
+
+        Console.WriteLine("Введите имя: ");
+        FirstName = Console.ReadLine();
+
+        Console.WriteLine("Введите фамилию: ");
+        lastName = Console.ReadLine();
+
+        Console.WriteLine("Введите возраст: ");
+        Age = Console.ReadLine();
+
+
+        file.WriteLine($"Имя: {FirstName}");
+        file.WriteLine($"Фамилия: {lastName}");
+        file.WriteLine($"Возраст: {Age}");
+      }
+    }
+
+
     static void Main(string[] args)
     {
       DemoPracticeNumberOne();
